@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="col">
+    <h3>{{title}}</h3>
+    <hr>
+    <form class="form-row">
+      <div class="form-group col-md-2">
+        <label for="nombre">Nombre</label>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div *ngFor="let persona of ArrayPersonas; let i = index ">
+        {{i + 1}}{{persona.nombre}} {{persona.apellido}}
+      </div>   
+    </div>
+  </div>
+</div>
